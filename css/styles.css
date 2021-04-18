@@ -1,0 +1,95 @@
+
+body{
+    display: flex;
+    color: hsl(240, 38%, 20%);
+    background-image: url(../images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position-y:  bottom;
+    background-size: 40%;
+}
+
+header{
+    margin: auto auto;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 90vw;
+    box-sizing: border-box;
+
+}
+
+h2{
+    line-height: 50px;
+}
+.left{
+    padding-top: 40px;
+    background-image: url(../images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 100px -20px ;
+    z-index: 3;
+    position: relative;
+    right: -150px;
+}
+.right{
+    background-image: url(../images/pattern-bg.svg);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: 80px ;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.btn-group{
+    bottom: 0;
+    z-index: 5; 
+    position: absolute;
+}
+
+h6{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+img{
+    position: absolute;
+    z-index: 2;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+}
+span{
+    color: hsl(240, 18%, 77%);
+    margin-left: 5px;
+}
+@media screen and (max-width:900px) {
+    .left{
+        padding-top: 40px;
+        background-image: url(../images/pattern-quotes.svg);
+        background-repeat: no-repeat;
+        background-position: 100px -20px ;
+        position: unset;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    #prev, #next{
+        background-color: white;
+        color: rgba(0, 0, 0, .5);
+        border: unset;
+
+    }
+    body{
+        background-size: 90%;
+    }
+    
+    .right{
+        background-size: cover 90% 90%;
+    }
+}
